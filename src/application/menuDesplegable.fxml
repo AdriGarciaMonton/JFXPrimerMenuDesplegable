@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controlador">
+   <children>
+      <AnchorPane fx:id="paneImagenDrawer" layoutX="6.0" prefHeight="42.0" prefWidth="600.0" style="-fx-background-color: #383838;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="drawerImagen" fitHeight="42.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="540.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@drawer.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane1" layoutY="42.0" prefHeight="200.0" prefWidth="600.0" AnchorPane.bottomAnchor="158.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="42.0" />
+      <AnchorPane fx:id="pane2" layoutX="10.0" layoutY="52.0" prefHeight="200.0" prefWidth="600.0" AnchorPane.bottomAnchor="148.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="42.0" />
+      <AnchorPane fx:id="pane3" layoutX="10.0" layoutY="52.0" prefHeight="200.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="42.0" />
+      <GridPane layoutX="183.0" layoutY="130.0" prefHeight="200.0" prefWidth="253.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="173.0" AnchorPane.rightAnchor="173.0" AnchorPane.topAnchor="130.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="140.0" minWidth="10.0" prefWidth="140.0" />
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="189.0" minWidth="10.0" prefWidth="138.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <JFXButton id="homeBTNS" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="113.0" prefWidth="153.0" style="-fx-background-color: #383838; -fx-background-radius: 0px;" stylesheets="@application.css" text="RECICLAJE" textFill="WHITE" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <JFXButton id="homeBTNS" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="67.0" prefWidth="146.0" style="-fx-background-color: #383838; -fx-background-radius: 0px;" stylesheets="@application.css" text="PRÓXIMOS" textFill="WHITE" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <JFXButton id="homeBTNS" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="82.0" prefWidth="214.0" style="-fx-background-color: #383838; -fx-background-radius: 0px;" text="CUENTAS" textFill="WHITE" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <JFXButton id="homeBTNS" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="67.0" prefWidth="133.0" style="-fx-background-color: #383838; -fx-background-radius: 0px;" text="PIDE COMIDA" textFill="WHITE" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <JFXButton id="homeBTNS" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="80.0" prefWidth="212.0" style="-fx-background-color: #383838; -fx-background-radius: 0px;" text="LISTA NEGRA" textFill="WHITE" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <JFXButton id="homeBTNS" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="76.0" prefWidth="210.0" style="-fx-background-color: #383838; -fx-background-radius: 0px;" text="PAPELERA" textFill="WHITE" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+         </children>
+         <padding>
+            <Insets bottom="3.0" right="3.0" />
+         </padding>
+      </GridPane>
+      <AnchorPane fx:id="opacityPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane fx:id="paneDrawer" layoutX="-200.0" layoutY="42.0" prefHeight="359.0" prefWidth="200.0">
+         <children>
+            <VBox layoutX="56.0" layoutY="14.0" prefHeight="359.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <JFXButton id="homeBTNS" prefHeight="71.0" prefWidth="202.0" style="-fx-background-color: black; -fx-background-radius: 0px;" text="RECICLAJE" textFill="WHITE" />
+                  <JFXButton id="homeBTNS" prefHeight="71.0" prefWidth="202.0" style="-fx-background-color: black; -fx-background-radius: 0px;" text="PRÓXIMOS" textFill="WHITE" />
+                  <JFXButton id="homeBTNS" prefHeight="71.0" prefWidth="202.0" style="-fx-background-color: black; -fx-background-radius: 0px;" text="CUENTAS" textFill="WHITE" />
+                  <JFXButton id="homeBTNS" prefHeight="71.0" prefWidth="202.0" style="-fx-background-color: black; -fx-background-radius: 0px;" text="COMIDA" textFill="WHITE" />
+                  <JFXButton id="homeBTNS" prefHeight="71.0" prefWidth="202.0" style="-fx-background-color: black; -fx-background-radius: 0px;" text="LISTA NEGRA" textFill="WHITE" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
